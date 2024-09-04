@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
+        <script media="screen and (min-width: 300px) and (max-width: 500px)" src="homePageMobile.js" defer></script>
     </head>
 
     <body>
@@ -50,7 +51,27 @@
                 src="img/VectorUp.svg" 
                 alt="" 
                 height="35" 
-                width="35" />
+                width="35"
+                id="swipeIcon"
+                onclick="openMenu()" />
+        </div>
+        
+        <div class="container-fluid text-center" id="mobileMenuContainer">
+            <div class="row align-items-center menuLine">
+                <span>3D MODELS</span>
+            </div>
+            <div class="row align-items-center menuLine">
+                <span>FIGURES</span>
+            </div>
+            <div class="row align-items-center menuLine">
+                <span>CONTACTS</span>
+            </div>
+            <div class="row align-items-center menuLine">
+                <span>HELP</span>
+            </div>
+            <div class="row align-items-center menuLine" id="signUpMobile">
+                <span>SIGN UP</span>
+            </div>
         </div>
         
     </body>
