@@ -7,16 +7,13 @@ function openMenu() {
     if (!opened) {
         swipeIconContainer.style.bottom = "50%";
         swipeIcon.src = "img/VectorDown.svg";
-
-        mobileMenuContainer.style.top = "50%";
+        mobileMenuContainer.style.top = "52%";
         opened = !opened;
     }
     else {
         swipeIconContainer.style.bottom = "20%";
         swipeIcon.src = "img/VectorUp.svg";
-
         mobileMenuContainer.style.top = "100%";
-
         opened = !opened;
     }
 }
