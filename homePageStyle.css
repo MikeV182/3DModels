@@ -58,6 +58,14 @@ body {
         font-weight: 300;
         font-family: "Akshar", system-ui;
     }
+
+    #swipeIconContainer {
+        display: none;
+    }
+
+    #mobileMenuContainer {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1279px) {
@@ -103,6 +111,14 @@ body {
         font-weight: 300;
         font-family: "Akshar", system-ui;
     }
+
+    #swipeIconContainer {
+        display: none;
+    }
+
+    #mobileMenuContainer {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 501px) and (max-width: 849px) {
@@ -110,5 +126,54 @@ body {
 }
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
-    /* mobile version */
+    #header {
+        display: none;
+    }
+    
+    .centered-header {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: "Akshar", system-ui;
+        letter-spacing: .3rem;
+    }
+    
+    #mainText {
+        margin-top: 40%;
+    }
+    
+    .centered-text {
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Akshar", system-ui;
+    }
+
+    #swipeIconContainer {
+        position: fixed;
+        bottom: 20%;
+        height: 35px;
+        transition: bottom 0.5s;
+    }
+
+    #mobileMenuContainer {
+        position: fixed;
+        top: 100%;
+        transition: top 0.5s;
+        background-color: #ffffff;
+        color: #000000;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+    }
+
+    .menuLine {
+        border: 1.5px solid #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #signUpMobile {
+        text-decoration: underline 1.5px;
+    }
 }
