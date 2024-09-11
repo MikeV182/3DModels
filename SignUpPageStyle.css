@@ -152,6 +152,33 @@ img {
         left: calc(100% - 55px);
         top: calc(100% - 55px);
     }
+
+    .changePoint {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #ffffff00;
+        border-radius: 20px;
+        height: 10px;
+        width: 40px;
+    }
+
+    #point3 {
+        background-color: #ffffff;
+        width: 80px;
+    }
+
+    #imageContainer {
+        position: relative;
+    }
+
+    #changingPointsContainer {
+        position: absolute;
+        top: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1279px) {
