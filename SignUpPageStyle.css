@@ -14,10 +14,6 @@ body {
     background-color: transparent !important;
 }
 
-img {
-    filter: brightness(40%);
-}
-
 @media screen and (min-width: 1280px) {
     #CreateAnAccountHeader {
         margin-top: 20px;
@@ -45,13 +41,15 @@ img {
     }
 
     #thumbImage {
+        filter: brightness(40%);
         object-fit: cover;
-        object-position: 40% 0;
+        object-position: 30% 0;
         border-radius: 20px;
         height: 95%;
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
+        transition: filter 0.5s;
     }
 
     #SubmitButton {
@@ -62,6 +60,8 @@ img {
         height: 80px;
         width: 100%;
         border-radius: 20px;
+        position: absolute;
+        top: calc(95% - 80px + 20px);
     }
 
     #LogInPageRef, #TermsConditionsPageRef {
@@ -159,14 +159,17 @@ img {
         border-radius: 20px;
         height: 10px;
         width: 40px;
+        transition: width 0.5s, 
+                    background-color 0.5s;
     }
 
-    #point3 {
-        background-color: #ffffff;
+    #point0 {
+        background-color: rgba(255, 255, 255, 1);
         width: 80px;
     }
 
-    #imageContainer {
+    #imageContainer,
+    #CreateAccountContainer {
         position: relative;
     }
 
