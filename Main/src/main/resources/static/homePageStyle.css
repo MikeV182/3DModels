@@ -32,8 +32,9 @@ body {
         font-family: "Akshar", system-ui;
         color: #ffffff;
         cursor: pointer;
-        padding: 2%;
+        padding: 4%;
         width: 50%;
+        text-decoration: none;
     }
     
     #logo {
@@ -85,8 +86,9 @@ body {
         font-family: "Akshar", system-ui;
         color: #ffffff;
         cursor: pointer;
-        padding: 2%;
+        padding: 4%;
         width: 50%;
+        text-decoration: none;
     }
     
     #logo {
