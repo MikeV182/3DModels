@@ -7,14 +7,14 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Entity
-@Table(name="clientsTable")
+@Table(name="clients")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Integer id;
+    private Long id;
 
     @Column(name="name")
     private String name;

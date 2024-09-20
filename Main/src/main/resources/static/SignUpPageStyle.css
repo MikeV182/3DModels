@@ -85,49 +85,49 @@ body {
         position: relative;
     }
 
-    #NameField::-webkit-input-placeholder, 
-    #SurnameField::-webkit-input-placeholder, 
-    #EmailField::-webkit-input-placeholder, 
-    #PasswordField::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    #name::-webkit-input-placeholder,
+    #surname::-webkit-input-placeholder,
+    #email::-webkit-input-placeholder,
+    #password::-webkit-input-placeholder { /* WebKit, Blink, Edge */
         color: rgba(255, 255, 255, 0.3);
     }
-    #NameField:-moz-placeholder, 
-    #SurnameField:-moz-placeholder, 
-    #EmailField:-moz-placeholder, 
-    #PasswordField:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-        color: rgba(255, 255, 255, 0.3);
-        opacity:  1;
-    }
-    #NameField::-moz-placeholder, 
-    #SurnameField::-moz-placeholder, 
-    #EmailField::-moz-placeholder, 
-    #PasswordField::-moz-placeholder { /* Mozilla Firefox 19+ */
+    #name:-moz-placeholder,
+    #surname:-moz-placeholder,
+    #email:-moz-placeholder,
+    #password:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
         color: rgba(255, 255, 255, 0.3);
         opacity:  1;
     }
-    #NameField:-ms-input-placeholder, 
-    #SurnameField:-ms-input-placeholder, 
-    #EmailField:-ms-input-placeholder, 
-    #PasswordField:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    #name::-moz-placeholder,
+    #surname::-moz-placeholder,
+    #email::-moz-placeholder,
+    #password::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: rgba(255, 255, 255, 0.3);
+        opacity:  1;
+    }
+    #name:-ms-input-placeholder,
+    #surname:-ms-input-placeholder,
+    #email:-ms-input-placeholder,
+    #password:-ms-input-placeholder { /* Internet Explorer 10-11 */
         color: rgba(255, 255, 255, 0.3);
     }
-    #NameField::-ms-input-placeholder, 
-    #SurnameField::-ms-input-placeholder, 
-    #EmailField::-ms-input-placeholder, 
-    #PasswordField::-ms-input-placeholder { /* Microsoft Edge */
+    #name::-ms-input-placeholder,
+    #surname::-ms-input-placeholder,
+    #email::-ms-input-placeholder,
+    #password::-ms-input-placeholder { /* Microsoft Edge */
         color: rgba(255, 255, 255, 0.3);
     }
-    #NameField::placeholder, 
-    #SurnameField::placeholder, 
-    #EmailField::placeholder, 
-    #PasswordField::placeholder { /* Modern browsers */
+    #name::placeholder,
+    #surname::placeholder,
+    #email::placeholder,
+    #password::placeholder { /* Modern browsers */
         color: rgba(255, 255, 255, 0.3);
     }
 
-    #NameField, 
-    #SurnameField, 
-    #EmailField, 
-    #PasswordField {
+    #name,
+    #surname,
+    #email,
+    #password {
         border-radius: 20px;
         height: 80px;
         font-size: 25px;
@@ -139,10 +139,10 @@ body {
         transition: border 0.2ms;
     }
 
-    #NameField:hover, 
-    #SurnameField:hover, 
-    #EmailField:hover, 
-    #PasswordField:hover {
+    #name:hover,
+    #surname:hover,
+    #email:hover,
+    #password:hover {
         border: 2px #8884FF solid;
     }
 

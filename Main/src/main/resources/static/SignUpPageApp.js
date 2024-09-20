@@ -1,5 +1,5 @@
 let passwordEyeIcon = document.getElementById("passwordEyeIcon");
-let passwordField = document.getElementById("PasswordField");
+let passwordField = document.getElementById("password");
 let hidePassword = true;
 
 let imageIndex = 0;
