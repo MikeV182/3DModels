@@ -1,0 +1,76 @@
+html {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 1), 
+      rgba(0, 0, 0, 1)
+    );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent !important;
+}
+
+@media screen and (min-width: 1280px) {
+    #pageContainer {
+        position: relative;
+    }
+
+    #pageRow {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    #logoContainer {
+        position: relative;
+        margin-top: 40px;
+        height: 120px;
+    }
+
+    #logo {
+        width: 120px;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+
+    #headerContainer {
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Akshar", system-ui;
+    }
+
+    #welcomeBackText {
+        font-size: 64px;
+        font-weight: 500;
+    }    
+
+    #enterDetailsText {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 1279px) {
+    /* laptop version */
+}
+
+@media screen and (min-width: 501px) and (max-width: 849px) {
+    /* tablet version */
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    /* mobile version */
+}
