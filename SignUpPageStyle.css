@@ -59,6 +59,7 @@ body {
         font-family: "Akshar", system-ui;
         height: 80px;
         width: 100%;
+        border: none;
         border-radius: 20px;
         position: absolute;
         top: calc(95% - 80px + 20px);
