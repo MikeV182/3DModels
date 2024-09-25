@@ -22,8 +22,6 @@ body {
     #pageRow {
         display: flex;
         flex-direction: column;
-        align-content: center;
-        align-items: center;
         flex-wrap: nowrap;
         margin-right: 15%;
         margin-left: 15%;
@@ -45,19 +43,16 @@ body {
     }
 
     #headerContainer {
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
         text-align: center;
         color: #ffffff;
         font-family: "Akshar", system-ui;
+        margin-bottom: 20px;
     }
 
     #welcomeBackText {
         font-size: 64px;
         font-weight: 500;
-    }    
+    }
 
     #enterDetailsText {
         font-size: 20px;
@@ -65,8 +60,8 @@ body {
     }
 
     #flexCheckDefault {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
     }
 
     .mb-3, .g-3 {
@@ -127,6 +122,7 @@ body {
     }
 
     #SubmitButton {
+        margin-top: 20px;
         color: #000000;
         font-size: 25px;
         font-weight: 500;
@@ -147,14 +143,11 @@ body {
 
     #dontHaneAnAccountSpan, 
     #RememberMeSpan {
+        margin-top: 20px;
         font-size: 20px;
         font-weight: 500;
         font-family: "Akshar", system-ui;
         color: #ffffff;
-    }
-
-    #dontHaneAnAccountContainer {
-        position: relative;
     }
 }
 
