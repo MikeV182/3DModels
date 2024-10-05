@@ -16,46 +16,41 @@
         <div class="container">
             <div class="row vh-100">
                 <div class="col">
-                    <h1>Account Details</h1>
+                    <div>
+                        <span id="accountDetailsHeader">Account Details</span>
+                    </div>
                     <div>
                         <form method="" action="">
                             <div class="mb-3">
                                 <label for="name">Profile name & surname</label>
-                                <input id="name" name="name" type="text" class="form-control" placeholder="Name" disabled>
+                                <input id="name" name="name" type="text" class="form-control" value="Kevin Brown" disabled>
                             </div>
                             <div class="mb-3">
                                 <label for="email">Email</label>
-                                <input id="email" name="email" type="email" class="form-control" placeholder="Email" disabled>
+                                <input id="email" name="email" type="email" class="form-control" value="example@gmail.com" disabled>
                             </div>
                             <div class="mb-3">
-                                <img 
-                                src="../static/img/passwordHideIcon.svg"
-                                alt="" 
-                                height="30" 
-                                width="30"
-                                id="passwordEyeIcon"
-                                onclick="showHidePassword()" />
                                 <label for="password">Password</label>
-                                <input id="password" name="password" type="password" class="form-control" placeholder="Password" disabled>
+                                <input id="password" name="password" type="password" class="form-control" value="examplePassword" disabled>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="col">
-                    <a href="">View purchase history</a>
-                    <div>
-                        <h3>Recent discounts</h3>
+                    <a id="viewPurchaseHistory" href="">View purchase history</a>
+                    <div id="recentDiscountsWindow">
+                        <span id="recentDiscountsHeader">Recent discounts</span>
                     </div>
                     <div class="mt-5">
                         <div class="row">
                             <div class="col">
                                 <form action="" method="patch"></form>
-                                    <input id="changeDetailsBtn" type="submit" value="change details">
+                                    <input class="customBtn" id="changeDetailsBtn" type="submit" value="change details">
                                 </form>
                             </div>
                             <div class="col">
                                 <form action="" method="delete">
-                                    <input id="deleteAccountBtn" type="button" value="delete account">
+                                    <input class="customBtn" id="deleteAccountBtn" type="button" value="delete account">
                                 </form>
                             </div>
                         </div>

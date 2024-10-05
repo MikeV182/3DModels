@@ -15,7 +15,77 @@ body {
 }
 
 @media screen and (min-width: 1280px) {
-    /* TODO - desktop version */
+    .mb-3, .g-3 {
+        margin-bottom: 0.625rem !important;
+        position: relative;
+    }
+
+    #accountDetailsHeader {
+        font-size: 64px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        color: #ffffff;
+    }
+
+    #name,
+    #email,
+    #password {
+        border-radius: 20px;
+        height: 80px;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.3);
+        border: none;
+        transition: border 0.2ms;
+    }
+
+    label {
+        font-size: 32px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        color: #ffffff;
+    }
+
+    #viewPurchaseHistory {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        color: #8884FF;
+    }
+
+    #recentDiscountsHeader {
+        font-size: 24px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        color: #ffffff;
+    }
+
+    #recentDiscountsWindow {
+        text-align: center;
+        height: 400px;
+        width: 400px;
+        color: #ffffff;
+        border: 2px solid;
+        border-radius: 20px;
+    }
+
+    .customBtn {
+        color:#ffffff;
+        background-color: #ffffff00;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        border: 2px solid;
+        border-radius: 20px;
+        height: 60px;
+        width: 160px;
+    }
+
+    #deleteAccountBtn {
+        color: #F25757;
+    }
 }
 
 @media screen and (min-width: 850px) and (max-width: 1279px) {
