@@ -55,20 +55,36 @@ body {
         color: #8884FF;
     }
 
-    #recentDiscountsHeader {
+    #recentDiscountsWindow {
         font-size: 24px;
         font-weight: 500;
         font-family: "Akshar", system-ui;
         color: #ffffff;
-    }
-
-    #recentDiscountsWindow {
         text-align: center;
         height: 400px;
         width: 400px;
-        color: #ffffff;
         border: 2px solid;
         border-radius: 20px;
+        overflow: scroll;
+    }
+
+    .promoCode {
+        border: 1px solid;
+    }
+
+    .promoCodeHeader {
+        display: block;
+    }
+
+    .promoCodeText {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: block;
+        font-size: 14px;
+        text-align: left;
+        font-weight: 500px;
+        line-height: 1;
     }
 
     .customBtn {
