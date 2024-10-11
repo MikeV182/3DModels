@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>3DModels</title>
-        <link rel="stylesheet" href="../static/AccountPageStyle.css">
+        <link rel="stylesheet" href="AccountPageStyle.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&display=swap" rel="stylesheet">
-        <script src="../static/AccountPageApp.js" defer></script>
+        <script src="AccountPageApp.js" defer></script>
     </head>
 
     <body>
@@ -29,18 +30,18 @@
             <div class="row">
                 <div class="col-7">
                     <div class="container">
-                        <form method="" action="">
+                        <form th:object="${client}">
                             <div class="mb-3">
                                 <label for="name">Profile name & surname</label>
-                                <input id="name" name="name" type="text" class="form-control" value="Kevin Brown" disabled>
+                                <input id="name" name="name" type="text" class="form-control" th:value="${client.name + ' ' + client.surname}" disabled>
                             </div>
                             <div class="mb-3">
                                 <label for="email">Email</label>
-                                <input id="email" name="email" type="email" class="form-control" value="example@gmail.com" disabled>
+                                <input id="email" name="email" type="email" class="form-control" th:value="${client.email}" disabled>
                             </div>
                             <div class="mb-3">
                                 <label for="password">Password</label>
-                                <input id="password" name="password" type="password" class="form-control" value="examplePassword" disabled>
+                                <input id="password" name="password" type="password" class="form-control" th:value="${client.password}" disabled>
                             </div>
                         </form>
                     </div>

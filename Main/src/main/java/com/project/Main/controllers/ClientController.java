@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 @RequiredArgsConstructor
@@ -32,18 +34,24 @@ public class ClientController {
     }
 
     @GetMapping("/login")
-    public String logInPage() {
+    public String logInPage(@ModelAttribute("client") Client client) {
         return "LogInPage";
     }
 
-    @PostMapping("/loginResult")
-    public String logInResult(Client client, Model model) {
-        if (clientService.getClientByEmailAndPassword(client) == null)
-            model.addAttribute("result", "Email or Password was incorrect");
-        else {
-            model.addAttribute("result", "Log In - successfully");
+    @PostMapping("/login")
+    public String logInResult(Client client, RedirectAttributes redirectAttributes) {
+        Client existingClient = clientService.getClientByEmailAndPassword(client);
+        if (existingClient == null) {
+            redirectAttributes.addFlashAttribute("client", client);
+            return "redirect:/login";
         }
-        return "LogInResultPage";
+
+        redirectAttributes.addAttribute("client", existingClient);
+        return "redirect:/account";
     }
 
+    @GetMapping("/account")
+    public String accountInfoPage(@ModelAttribute("client") Client client) {
+        return "AccountPage";
+    }
 }
