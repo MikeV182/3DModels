@@ -16,11 +16,11 @@ public class MyUserDetailsService implements UserDetailsService {
     private final ClientService clientService;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Client client = clientService.getClientByEmail(username);
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        Client client = clientService.getClientByEmail(email);
 
         if (client == null) {
-            throw new UsernameNotFoundException("User with email: " + username + " not found!");
+            throw new UsernameNotFoundException("User with email: " + email + " not found!");
         }
 
         return new ClientPrincipal(client);
