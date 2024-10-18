@@ -16,9 +16,25 @@ public class ClientService {
     @Autowired
     private final ClientRepository clientRepository;
 
+//    private static volatile ClientService clientService;
+//    public static ClientService getInstance() {
+//        if (clientService == null) {
+//            synchronized (ClientService.class) {
+//                if (clientService == null) {
+//                    clientService = new ClientService(clientService.clientRepository);
+//                }
+//            }
+//        }
+//        return clientService;
+//    }
+
     public void createClient(Client client) {
         log.info("Added new user");
         clientRepository.save(client);
+    }
+
+    public Client getClientByEmail(String email) {
+        return clientRepository.findByEmail(email);
     }
 
     public Client getClientById(Long clientId) {
