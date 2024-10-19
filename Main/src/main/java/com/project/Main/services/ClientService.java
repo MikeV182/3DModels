@@ -5,6 +5,7 @@ import com.project.Main.repositories.ClientRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
@@ -15,6 +16,7 @@ import java.util.Objects;
 public class ClientService {
     @Autowired
     private final ClientRepository clientRepository;
+    private final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
 
 //    private static volatile ClientService clientService;
 //    public static ClientService getInstance() {
@@ -29,7 +31,8 @@ public class ClientService {
 //    }
 
     public void createClient(Client client) {
-        log.info("Added new user");
+        log.info("Adding new user");
+        client.setPassword(encoder.encode(client.getPassword()));
         clientRepository.save(client);
     }
 
