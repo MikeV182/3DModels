@@ -18,18 +18,6 @@ public class ClientService {
     private final ClientRepository clientRepository;
     private final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
 
-//    private static volatile ClientService clientService;
-//    public static ClientService getInstance() {
-//        if (clientService == null) {
-//            synchronized (ClientService.class) {
-//                if (clientService == null) {
-//                    clientService = new ClientService(clientService.clientRepository);
-//                }
-//            }
-//        }
-//        return clientService;
-//    }
-
     public void createClient(Client client) {
         log.info("Adding new user");
         client.setPassword(encoder.encode(client.getPassword()));

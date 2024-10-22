@@ -39,18 +39,6 @@ public class ClientController {
         return "LogInPage";
     }
 
-    @PostMapping("/login")
-    public String logInResult(Client client, RedirectAttributes redirectAttributes) {
-        Client existingClient = clientService.getClientByEmailAndPassword(client);
-        if (existingClient == null) {
-            redirectAttributes.addFlashAttribute("client", client);
-            return "redirect:/login";
-        }
-
-        redirectAttributes.addAttribute("client", existingClient);
-        return "redirect:/account";
-    }
-
     @GetMapping("/account")
     public String accountInfoPage(@ModelAttribute("client") Client client) {
         return "AccountPage";
