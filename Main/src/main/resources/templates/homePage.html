@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,8 +33,11 @@
                     Help
                 </div>
                 <div class="col-4"></div>
-                <div class="col-2">
+                <div class="col-2" sec:authorize="isAnonymous()">
                     <a class="sign-up-button" href="/new">Sign Up</a>
+                </div>
+                <div class="col-2" sec:authorize="isAuthenticated()">
+                    <a class="sign-up-button" href="/account">Account info</a>
                 </div>
             </div>
         </div>
