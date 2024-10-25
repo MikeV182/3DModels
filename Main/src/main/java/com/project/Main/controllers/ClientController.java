@@ -1,9 +1,11 @@
 package com.project.Main.controllers;
 
 import com.project.Main.models.Client;
+import com.project.Main.models.ClientPrincipal;
 import com.project.Main.services.ClientService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,7 +42,10 @@ public class ClientController {
     }
 
     @GetMapping("/account")
-    public String accountInfoPage(@ModelAttribute("client") Client client) {
+    public String accountInfoPage(@AuthenticationPrincipal ClientPrincipal client, Model model) {
+        model.addAttribute("client_name", client.getName());
+        model.addAttribute("client_surname", client.getSurname());
+        model.addAttribute("client_email", client.getUsername());
         return "AccountPage";
     }
 }

@@ -29,6 +29,14 @@ public class ClientPrincipal implements UserDetails {
         return client.getEmail();
     }
 
+    public String getName() {
+        return client.getName();
+    }
+
+    public String getSurname() {
+        return client.getSurname();
+    }
+
     @Override
     public boolean isAccountNonExpired() {
         return true; //TODO

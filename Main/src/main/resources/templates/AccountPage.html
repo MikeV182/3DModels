@@ -30,14 +30,14 @@
             <div class="row">
                 <div class="col-7">
                     <div class="container">
-                        <form th:object="${client}">
+                        <form>
                             <div class="mb-3">
                                 <label for="name">Profile name & surname</label>
-                                <input id="name" name="name" type="text" class="form-control" th:value="${client.name + ' ' + client.surname}" disabled>
+                                <input id="name" name="name" type="text" class="form-control" th:value="${client_name + ' ' + client_surname}" disabled>
                             </div>
                             <div class="mb-3">
                                 <label for="email">Email</label>
-                                <input id="email" name="email" type="email" class="form-control" th:value="${client.email}" disabled>
+                                <input id="email" name="email" type="email" class="form-control" th:value="${client_email}" disabled>
                             </div>
                             <div class="mb-3">
                                 <label for="password">Password</label>
