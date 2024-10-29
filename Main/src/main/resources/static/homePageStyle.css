@@ -22,6 +22,11 @@ body {
         font-family: "Akshar", system-ui;
         color: #ffffff;
     }
+
+    .page-ref {
+        color: #ffffff;
+        text-decoration: none;
+    }
     
     .sign-up-button {
         overflow: hidden;

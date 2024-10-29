@@ -30,6 +30,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(requests -> requests
                         .requestMatchers("/",
                                 "/new",
+                                "/error",
+                                "/models",
                                 "/**.css",
                                 "/img/**",
                                 "/fonts/**",

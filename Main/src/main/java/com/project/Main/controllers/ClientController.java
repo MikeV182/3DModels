@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -20,7 +17,7 @@ public class ClientController {
     @Autowired
     private final ClientService clientService;
 
-    @GetMapping("/")
+    @GetMapping
     public String homePage() {
         return "homePage";
     }
@@ -33,7 +30,7 @@ public class ClientController {
     @PostMapping("/new")
     public String createClient(@RequestBody Client client) {
         clientService.createClient(client);
-        return "redirect:/";
+        return "redirect:/login";
     }
 
     @GetMapping("/login")
