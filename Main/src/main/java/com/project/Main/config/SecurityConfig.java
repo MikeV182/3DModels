@@ -16,6 +16,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.security.web.util.matcher.RegexRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -37,6 +38,8 @@ public class SecurityConfig {
                                 "/fonts/**",
                                 "/**.js",
                                 "/static/**").permitAll()
+                        .requestMatchers(
+                                RegexRequestMatcher.regexMatcher("/models/[0-9]+")).permitAll()
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session

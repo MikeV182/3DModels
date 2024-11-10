@@ -20,7 +20,7 @@ public class MyModel {
     private String name;
 
     @Column(name = "price")
-    private int price;
+    private float price;
 
     @Column(name = "thumbnail_url")
     private String thumbnail_url;

@@ -1,0 +1,99 @@
+html {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 1), 
+      rgba(0, 0, 0, 1)
+    );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent !important;
+}
+
+@media screen and (min-width: 1280px) {
+    #pageHeader {
+        margin-top: 20px;
+    }
+    
+    #logo {
+        width: 70px;
+    }
+
+    .page-ref {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+    }
+
+    .sign-up-button {
+        overflow: hidden;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+        font-weight: 500;
+        font-size: 16px;
+        font-family: "Akshar", system-ui;
+        color: #ffffff;
+        cursor: pointer;
+        height: 40px;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    #shoppingCart {
+        height: 35px;
+        aspect-ratio: 1 / 1;
+    }
+
+    #searchIcon {
+        height: 25px;
+        aspect-ratio: 1 / 1;
+    }
+
+    #searchButton {
+        background-color: #8884FF;
+        border: none;
+        border-radius: 0px 6px 6px 0px;
+        margin: 0px;
+    }
+
+    #searchbar {
+        border-radius: 6px 0px 0px 6px;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Akshar", system-ui;
+        border: none;
+        transition: border 0.2ms;
+    }
+
+    #searchbar:hover {
+        border: 2px #8884FF solid;
+    }
+
+    #searchbar::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    #searchbar:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: rgba(0, 0, 0, 0.3);
+        opacity:  1;
+    }
+    #searchbar::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: rgba(0, 0, 0, 0.3);
+        opacity:  1;
+    } 
+    #searchbar:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: rgba(0, 0, 0, 0.3);
+    }
+    #searchbar::-ms-input-placeholder { /* Microsoft Edge */
+        color: rgba(0, 0, 0, 0.3);
+    }
+    #searchbar::placeholder { /* Modern browsers */
+        color: rgba(0, 0, 0, 0.3);
+    }
+}
