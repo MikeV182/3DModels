@@ -96,4 +96,25 @@ body {
     #searchbar::placeholder { /* Modern browsers */
         color: rgba(0, 0, 0, 0.3);
     }
+
+    #filtersRow {
+        color: #8884ff;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        margin-top: 20px;
+        position: relative;
+    }
+    
+    .custom-link {
+        text-decoration: none;
+        background-color: #8884FF;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Akshar", system-ui;
+        display: block;
+        border: none;
+        border-radius: 6px;
+    }
 }
