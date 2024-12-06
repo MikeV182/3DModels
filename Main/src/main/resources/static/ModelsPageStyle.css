@@ -114,7 +114,24 @@ body {
         font-weight: 500;
         font-family: "Akshar", system-ui;
         display: block;
+        width: 100%;
         border: none;
         border-radius: 6px;
+        padding: .375rem .0rem .375rem .0rem; 
+        line-height: 1.5;
     }
+
+    .inactive {
+        background-color: #6E6E6E;
+    }
+
+    #categorySelect,
+    #fileFormatSelect,
+    #priceSelect,
+    #sortSelect {
+        padding: 9px 2.25rem 9px .75rem;
+        border: none;
+        margin-top: 10px;
+    }
+    
 }
